@@ -2,6 +2,7 @@ name: flutter_html_math
 description: Math widget for flutter_html.
 version: 3.0.0-alpha.3
 homepage: https://github.com/Sub6Resources/flutter_html
+publish_to: none
 
 environment:
   sdk: ^3.0.0
@@ -11,9 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
   html: '>=0.15.0 <1.0.0'
-  #flutter_html: '>=3.0.0-alpha.3 <4.0.0'
-  flutter_html:
-    path: ../..
+  flutter_html:     
+    git:
+      url: https://github.com/NASunderland/flutter_html.git
+      ref: 3.0.0-alpha.6
+  # flutter_html:
+  #   path: ../..
 
   flutter_math_fork: '^0.7.2'
 
